@@ -26,7 +26,7 @@ La base de datos corresponde al período comprendido entre **2009-10-01 14:00:00
 ```{r, echo = FALSE, message=FALSE}
 
 # 1) Carga de datos CABA
-datos <- read.csv("CABA_datos.csv", 
+datos <- read.csv("data/raw/CABA_datos.csv", 
                   header = TRUE, sep=",", 
                   na.strings = NA, 
                   stringsAsFactors = FALSE) #N = 67070
@@ -186,7 +186,7 @@ No quedan muchos casos. 22 en total, 8 para cada estación
 
 ```{r, echo = FALSE}
 
-smn <- read.csv("smn/buenosaires.csv", 
+smn <- read.csv("data/raw/buenosaires.csv", 
                 header = TRUE, 
                 sep=";", 
                 na.strings = NA,
